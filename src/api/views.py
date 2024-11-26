@@ -1,5 +1,6 @@
 from django.db.models import Prefetch
 from django.http import JsonResponse
+from django.views import defaults
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 
@@ -26,3 +27,13 @@ class FoodsByCategoryViewSet(GenericViewSet):
         # список "foods" содержит хотя бы 1 элемент.
 
         return Response(result)
+
+
+def custom404(request, exception=None):
+    if request.headers.get("ACCEPT") == "application/json":
+        return JsonResponse({
+            'status_code': 404,
+            'error': 'The resource was not found'
+        })
+
+    return defaults.page_not_found(request)

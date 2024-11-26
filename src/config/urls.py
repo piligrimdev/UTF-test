@@ -15,6 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path, include
+from api.views import custom404
+
+handler404 = custom404
 
 urlpatterns = [
     path('foods/', include('foods.urls')),  # для просмотра всех данных блюд и разделов меню
