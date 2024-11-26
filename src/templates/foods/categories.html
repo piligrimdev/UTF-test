@@ -1,0 +1,15 @@
+{% extends 'foods/base.html' %}
+
+{% block main %}
+    <h1>Food Categories</h1>
+    <ul>
+    {% for categ in categories %}
+        <li>
+            {{ categ.name_ru }}, id: {{ categ.id }}
+        </li>
+        <br>
+        {% empty %}
+            <h2> No foods yet </h2>
+    {% endfor %}
+    </ul>
+{% endblock %}

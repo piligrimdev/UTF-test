@@ -1,0 +1,15 @@
+{% extends 'foods/base.html' %}
+
+{% block main %}
+    <h1>Foods</h1>
+    <ul>
+    {% for food in foods %}
+        <li>
+            {{ food.name_ru }} : {{ food.cost }}, publish: {{ food.is_publish }}, category: {{ food.category }}
+        </li>
+        <br>
+        {% empty %}
+            <h2> No foods yet </h2>
+    {% endfor %}
+    </ul>
+{% endblock %}
