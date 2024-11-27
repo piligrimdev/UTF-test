@@ -1,12 +1,14 @@
 """
 Заполняет таблицу с позициями меню
-Перед заполнением блюд необходимо, чтобы табилца с разделами меню была заполнена.
+Перед заполнением блюд необходимо,
+чтобы табилца с разделами меню была заполнена.
 """
 
 from django.core.management import BaseCommand
 from django.db import transaction
 
 from foods.models import Food, FoodCategory
+
 
 class Command(BaseCommand):
 
@@ -20,7 +22,7 @@ class Command(BaseCommand):
             dishes = FoodCategory.objects.get(name_ru="Основные блюда")
 
             coke, flag = Food.objects.get_or_create(
-                category = drinks,
+                category=drinks,
                 code=100, internal_code=100, cost=100,
                 name_ru="Кола",
                 is_publish=True,

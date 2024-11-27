@@ -6,16 +6,19 @@ from rest_framework.viewsets import GenericViewSet
 
 from foods.models import Food, FoodCategory
 
-from api.serializers import FoodSerializer, FoodListSerializer
+from api.serializers import FoodListSerializer
+
 
 class FoodsByCategoryViewSet(GenericViewSet):
     """
     ViewSet для запроса пунктов меню
     """
     queryset = (FoodCategory.objects.prefetch_related(
-                Prefetch('food', queryset=Food.objects.filter(is_publish=True)))
-                .order_by('id'))   # подгружаем позиции сразу и фильтруем по полю is_publish
-                                   # для большей наглядности сортируем по id
+        Prefetch('food',
+                 queryset=Food.objects.filter(is_publish=True)))
+                .order_by('id'))
+    # подгружаем позиции сразу и фильтруем по полю is_publish
+    # для большей наглядности сортируем по id
 
     serializer_class = FoodListSerializer
 

@@ -14,6 +14,7 @@ class FoodListView(ListView):
     model = Food
     context_object_name = "foods"
 
+
 class FoodCategoriesListView(ListView):
     template_name = 'foods/categories.html'
     model = FoodCategory

@@ -7,6 +7,7 @@ from django.db import transaction
 
 from foods.models import FoodCategory
 
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         with transaction.atomic():

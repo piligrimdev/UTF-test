@@ -1,0 +1,227 @@
+[
+    {
+        "model": "foods.foodcategory",
+        "pk": 1,
+        "fields": {
+            "created": "2024-11-26T14:10:20.607Z",
+            "modified": "2024-11-27T20:29:21.286Z",
+            "name_ru": "Напитки",
+            "name_en": "Drinks",
+            "name_ch": null,
+            "order_id": 10
+        }
+    },
+    {
+        "model": "foods.foodcategory",
+        "pk": 2,
+        "fields": {
+            "created": "2024-11-26T14:10:20.609Z",
+            "modified": "2024-11-27T20:29:15.745Z",
+            "name_ru": "Выпечка",
+            "name_en": "Bakery",
+            "name_ch": null,
+            "order_id": 20
+        }
+    },
+    {
+        "model": "foods.foodcategory",
+        "pk": 3,
+        "fields": {
+            "created": "2024-11-26T14:10:20.610Z",
+            "modified": "2024-11-27T20:29:25.832Z",
+            "name_ru": "Основные блюда",
+            "name_en": "Main dishes",
+            "name_ch": null,
+            "order_id": 30
+        }
+    },
+    {
+        "model": "foods.foodcategory",
+        "pk": 4,
+        "fields": {
+            "created": "2024-11-26T14:10:20.611Z",
+            "modified": "2024-11-27T20:29:05.655Z",
+            "name_ru": "Закуски",
+            "name_en": "Snaks",
+            "name_ch": null,
+            "order_id": 40
+        }
+    },
+    {
+        "model": "foods.foodcategory",
+        "pk": 5,
+        "fields": {
+            "created": "2024-11-26T21:26:53.391Z",
+            "modified": "2024-11-26T21:26:53.391Z",
+            "name_ru": "Алкоголь",
+            "name_en": "Alc.",
+            "name_ch": null,
+            "order_id": 50
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 1,
+        "fields": {
+            "created": "2024-11-26T14:33:17.038Z",
+            "modified": "2024-11-26T14:33:17.038Z",
+            "category": 1,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 100,
+            "internal_code": 100,
+            "name_ru": "Кола",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "100.00",
+            "is_publish": true,
+            "additional": []
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 2,
+        "fields": {
+            "created": "2024-11-26T14:33:17.041Z",
+            "modified": "2024-11-26T14:33:17.041Z",
+            "category": 1,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 115,
+            "internal_code": 115,
+            "name_ru": "Вода минеральная",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "80.00",
+            "is_publish": true,
+            "additional": []
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 5,
+        "fields": {
+            "created": "2024-11-26T14:49:48.342Z",
+            "modified": "2024-11-26T14:49:48.342Z",
+            "category": 4,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 401,
+            "internal_code": 401,
+            "name_ru": "Чипсы Lays",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "180.00",
+            "is_publish": false,
+            "additional": []
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 6,
+        "fields": {
+            "created": "2024-11-26T14:49:48.345Z",
+            "modified": "2024-11-26T14:49:48.345Z",
+            "category": 4,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 402,
+            "internal_code": 402,
+            "name_ru": "Картошка фри",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "320.00",
+            "is_publish": true,
+            "additional": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 7,
+        "fields": {
+            "created": "2024-11-26T14:49:48.348Z",
+            "modified": "2024-11-26T14:49:48.348Z",
+            "category": 2,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 202,
+            "internal_code": 202,
+            "name_ru": "Вензель с малиной",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "115.00",
+            "is_publish": false,
+            "additional": []
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 8,
+        "fields": {
+            "created": "2024-11-26T14:49:48.350Z",
+            "modified": "2024-11-26T14:49:48.350Z",
+            "category": 2,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 203,
+            "internal_code": 203,
+            "name_ru": "Хачапури",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "150.00",
+            "is_publish": false,
+            "additional": []
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 11,
+        "fields": {
+            "created": "2024-11-26T17:54:03.925Z",
+            "modified": "2024-11-26T17:54:03.925Z",
+            "category": 3,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 303,
+            "internal_code": 303,
+            "name_ru": "Бургер с котлетой из оленины",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "315.00",
+            "is_publish": true,
+            "additional": [
+                1,
+                6
+            ]
+        }
+    },
+    {
+        "model": "foods.food",
+        "pk": 12,
+        "fields": {
+            "created": "2024-11-26T17:54:03.928Z",
+            "modified": "2024-11-26T17:54:03.928Z",
+            "category": 3,
+            "is_vegan": false,
+            "is_special": false,
+            "code": 327,
+            "internal_code": 327,
+            "name_ru": "Стейк рибай",
+            "description_ru": null,
+            "description_en": null,
+            "description_ch": null,
+            "cost": "400.00",
+            "is_publish": true,
+            "additional": []
+        }
+    }
+]

@@ -9,5 +9,6 @@ router = DefaultRouter()
 router.register('foods', FoodsByCategoryViewSet)
 
 urlpatterns = [
-    path('v1/', include(router.urls)),  # Адрес для API запроса:  /api/v1/foods/
+    # Адрес для API запроса:  /api/v1/foods/
+    path('v1/', include(router.urls)),
 ]
